@@ -1,0 +1,70 @@
+.full-page {
+    height: 100%;
+    width: 100%;
+}
+
+#app {
+    position: relative;
+}
+
+
+// 自适应大小布局样式，在各个使用处修改top和bottom
+.page-content {
+    position: absolute;
+    top: 74px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+.tableContent{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0px;
+    bottom: 0px;
+    margin: 0;
+    overflow: hidden; // 解决滚动样式异常
+
+  }
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.pageChange {
+    position: fixed;
+    bottom: 0px;
+    left: 210px;
+    right: 0px;
+    text-align: center;
+}
+
+.table {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 55px;
+    bottom: 35px;
+    margin: 0;
+    overflow: hidden;
+}
+.fl{
+    float: left;
+}
+.rt{
+    float: right;
+}
+.table-function {
+    padding: 6px 12px;
+}
+.ta{
+    text-align: center;
+}
+.zero{
+    margin : 0;
+    padding : 0;
+
+}

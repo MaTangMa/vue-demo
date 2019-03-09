@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- 禁止html页面缓存，每次打开html页面需要访问服务器 -->
+  <meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+  <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache,no-store">
+  <meta http-equiv="Cache" content="no-cache">
+  <meta HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT">
+  <meta HTTP-EQUIV="expires" CONTENT="0">
+  <title>水库水电站预警及防汛抢护管理平台</title>
+</head>
+
+<body onload="hideLoadDiv()">
+  <script>
+    document.write('<div id="systemLoadDiv" class="el-loading-mask" style="background-color: rgba(255, 255, 255, 0.8);"><div class="el-loading-spinner"><i class="el-icon-loading"></i><p class="el-loading-text">正在加载系统，请稍后...</p></div></div>')
+    function hideLoadDiv() {
+      document.getElementById('systemLoadDiv').style.display = "none";
+    }
+  </script>
+  <div id="app"></div>
+</body>
+
+</html>
